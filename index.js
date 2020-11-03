@@ -7,7 +7,7 @@ const {
 } = require('child_process');
 
 // Constants
-const port = 3000;
+const port = 8088;
 const sendEmailScript = './Email-send.scpt';
 const sendAppointmentScript = './Appointment-send.scpt';
 
