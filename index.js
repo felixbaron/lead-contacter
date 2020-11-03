@@ -72,11 +72,11 @@ const sendEmail = () => (req, res, next) => {
 };
 
 // Routers
-// http://localhost:3000/sendEmail?email=name%40email.com&subject=my-subject&template=/path/to/template.html
+// http://localhost:8088/sendEmail?email=name%40email.com&subject=my-subject&template=/path/to/template.html
 const reqParamsSendEmail = ['email', 'subject', 'template'];
 app.get('/sendEmail', checkParams(reqParamsSendEmail), renderTemplate(), sendEmail(), deleteTpl(), (req, res) => res.status(200).send('OK'));
 
-// http://localhost:3000/sendAppointment?email=name%40email.com&subject=my-subject&template=/path/to/template.html
+// http://localhost:8088/sendAppointment?email=name%40email.com&subject=my-subject&template=/path/to/template.html
 const reqParamsSendAppointment = ['email', 'subject', 'template'];
 app.get('/sendAppointment', checkParams(reqParamsSendAppointment), renderTemplate(), sendAppointment(), deleteTpl(), (req, res) => res.status(200).send('OK'));
 
