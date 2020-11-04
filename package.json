@@ -4,8 +4,7 @@
   "description": "This Express.js microservice provides REST endpoints to automate sales contact generation.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx pkg -o ./bin/LeadContacter -t node14-macos-x64 index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Felix Baron",
   "license": "ISC",
@@ -17,6 +16,5 @@
     "eslint": "^7.12.1",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.1",
-    "pkg": "^4.4.9"
   }
 }
